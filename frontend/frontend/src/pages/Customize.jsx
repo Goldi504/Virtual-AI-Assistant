@@ -88,7 +88,7 @@ const navigate = useNavigate()
     className='w-full h-[100vh] bg-gradient-to-t from-[black] to-[#030353d0] flex justify-center items-center flex-col p-[20px] '>
       <h1 className='text-white mb-[40px] text-[30px] text-center'>
         <IoMdArrowRoundBack  className='absolute top-[30px] left-[30px] text-white w-[25px] h-[25px] cursor-pointer' 
-        onClick={()=>navigate("/customize")}/>
+        onClick={()=>navigate("/")}/>
         Select your <span className='text-blue-200'>Assistant Image</span>
       </h1>
 
@@ -106,7 +106,7 @@ const navigate = useNavigate()
   className={`w-[70px] h-[140px] lg:w-[150px] lg:h-[250px] bg-[#030326] border-2 border-[#0000ff65]
   rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-blue-950 
   cursor-pointer hover:border-white flex items-center justify-center 
-  ${selectedImage == "input " ? "border-4 border-white shadow-2xl shadow-blue-950" : null}`}
+  ${selectedImage == "input" ? "border-4 border-white shadow-2xl shadow-blue-950" : null}`}
   onClick={() => {
     inputImage.current.click();
     setselectedImage("input");
